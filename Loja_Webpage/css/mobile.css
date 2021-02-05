@@ -1,0 +1,310 @@
+@media (max-width: 780px){
+	html, body, #face, * {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		width: 100vw;
+		
+	}
+
+	#face {
+		width: 100%;
+		padding: 4px;
+		margin: 4px 0px;
+	}
+
+	#face >header {
+		display: flex;
+		width: inherit;
+		flex-direction: column;
+		align-items: center;
+		margin: 3px auto;
+	}
+
+	#face >header>span{
+		position: fixed;
+		top: -12px;
+		display:block;
+		width: 100%;
+		height: 66px;
+		margin: 12px 0;
+		background: rgba(30,30,30);
+	}
+
+	#face >header img {
+		max-width: 700px;
+		width: -webkit-fill-available;
+		height: 120px;
+		margin: 65px auto 20px;
+    }
+    
+    #face >header .toggle {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+        width: 60px;
+        height: 40px;
+        border: 2px solid black;
+        border-radius: 7px;
+    }
+    #face >header .toggle div {
+        width: 80%;
+        height: 2px;
+        background: black;
+        margin-top: 8px;
+    }
+
+
+
+	#face >header span nav ul {
+		display: flex;
+		justify-content: space-evenly;
+		margin: 6px 0 0;
+	}
+
+	#face >header span nav ul a {
+		margin-top: 13px;
+		padding: 1.5px;
+		border: 2.5px solid yellow;
+		border-radius: 5px;
+		text-decoration: none;
+	}
+	
+	#face >header span nav ul a li {
+		list-style: none;
+		padding: 4px 8px;
+		background: yellow;
+		border-radius: 4px;
+		color: black;
+	}
+
+	#face >header span >p {
+		display: none;
+		color: white;
+	}
+
+	#face >main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	#destaque {
+		width: 90%;
+	}
+
+	#destaque .lateral {
+        background: lightgrey;
+        border-radius: 4px;
+        padding: 10px;
+	}
+
+	#destaque .lateral h2 {
+		text-align: center;
+		padding: 4px;
+		margin: 4px 0;
+	}
+
+	.lateral form {
+        font-weight: 600;
+		font-size: 1.1rem;
+    }
+
+	.lateral form input[type="search"] {
+		width: 90%;
+		height: 30px;
+        margin-left: 10px;
+        border-radius: 5px;
+	}
+
+	.lateral form input[type="image"] {
+		margin-left: 8px;
+		margin-top: 2px;
+		padding: 8px;
+		border: 1px solid black;
+		border-radius: 50%;
+	}
+
+	#destaque .lateral nav {}
+
+	#destaque .lateral nav ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#destaque .lateral nav ul a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 2px;
+        text-decoration: none;
+	}
+
+	#destaque .lateral nav ul a li {
+		list-style: none;
+		padding: 8px;
+		color: blue;
+		border-bottom: 1px solid black;
+		width: inherit;
+		text-align: center;
+		font-weight: 600;
+	}
+
+	#destaque .lateral nav ul a:last-child li {
+		padding-bottom: 0px;
+		border-bottom: none;
+	}
+
+	#destaque .lateral nav ul a:first-child li {
+		border-top: 1px solid black;
+	}
+
+	
+	#destaque > img {
+		width: 100%;
+		display: block;
+		height: 330px;
+        margin: 22px auto;
+        border-radius: 6px;
+	}
+	
+	#artigos {
+		width: 80%;
+	}
+	
+	section#artigos div.artigos {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		flex-direction: column;
+        margin: 14px 0;
+        border-radius: 4px;
+	}
+
+	#artigos .novidades {
+        background: rosybrown;
+	} 
+
+	#artigos .mais-vendidos {
+		background: lightskyblue;
+	}
+	
+	#artigos .artigos h3 {
+        margin: 12px;
+	}
+
+	#artigos .artigos ul {
+        max-width: 575px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 20px 0;
+ }
+
+	#artigos .artigos ul li {
+        max-width: 45%;
+        width: 100%;
+        list-style: none;
+        padding: 6px;
+        margin: 10px;
+ }     
+
+.artigos ul li.item a {
+    width: 600%;
+    
+}
+
+.artigos ul .item a figure {
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ 	width: 100%;
+ }      
+
+.artigos ul li.item a figure img {
+    width: inherit;
+    border-radius: 4px;
+}
+
+.artigos ul li.item a figure figcaption {
+    padding: 3px;
+    background: #4e4e4e;
+    color: white;
+}
+
+    footer {
+        display: flex;
+        justify-content: space-between;    
+        width: 100%;
+        background: url('../img/fundo-rodape.png');
+        padding: 20px;
+	}
+    
+    footer span {}
+
+    footer span a {
+    	margin-left: 8px;
+    }
+
+}
+
+@media(max-width: 520px){
+
+    #face >header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #face >header span {
+		display: none;
+		margin: 6px 0 0;
+    }
+    
+    #face >header span nav ul a li {
+		list-style: none;
+        padding: 4px 8px;
+        margin-left: 10%;
+    }
+
+    #face >header img {
+        width: 80%;
+    }
+    
+    #face >header .toggle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+        width: 50px;
+		height: 40px;
+		margin: 0 4px;
+        border: 2px solid black;
+        border-radius: 7px;
+    }
+
+    #face >header .toggle:active {
+        box-shadow: 0px 0px 1px 1.5px rgb(172, 172, 172) inset;
+    }
+
+    #face >header .toggle div {
+        width: 80%;
+        height: 2px;
+        background: black;
+        margin-top: 8px;
+    }
+
+    #artigos .artigos ul li {
+        max-width: 80%;
+		width: 100%;
+		margin: 0 auto;
+    }
+
+
+
+}
