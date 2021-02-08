@@ -1,0 +1,243 @@
+@charset "utf-8";  
+@font-face{
+	font-family: 'fontelogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+ body {
+	 color: rgba(0,0,0,1);
+  background-color: #dddddd
+  } 
+  
+  p {
+   text-align: justify;
+   text-indent: 40px;
+   }
+/*formatacao do corpo da pagina*/
+
+div#interface {
+	background-color: white;
+	width:1050px;
+    margin: -15px auto 0px auto;
+	box-shadow: 0px 0px 10px rgba(30,30,30,0.6);
+	padding: 20px;	
+}
+ 
+img#icone {
+	position: absolute;
+	left: 1035px;
+	top: 80px;	
+}
+/*cabecalho*/
+
+header#cabecalho {
+	border-bottom: 1px solid #888888;
+	font-family: "lucida sans unicode", "lucida grande", sans-serif;
+	font-style: italic;
+	font-weight: 4px;
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 90px;
+}
+header#cabecalho h1{
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30pt;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+}
+header#cabecalho h2{
+      font-size: 15pt;
+      margin-top: 0px;
+	  font-family: arial, sans-serif;
+	  color: #888888;
+	  padding: 0px;
+}
+
+
+/* Formatacao de imagens com legendas*/
+
+figure.foto-legenda {
+	  border: 8px solid white;
+	  box-shadow: 1px 1px 4px black;
+	  position: relative;
+ }
+ figure.foto-legenda img {
+	 width: 100%;
+	 height: 100%;	 
+ }
+ figure.foto-legenda figcaption {
+	 position: absolute;
+	 opacity: 0;
+	 top: 0px;
+	 background-color: rgba(0,0,0,0.4);
+	 color: white;
+	 width: 100%;
+	 height: 100%;
+	 padding: 10px;
+	 box-sizing: border-box;
+     transition: opacity 2s;	 
+ }
+ figure.foto-legenda:hover figcaption{
+	 opacity: 1;
+	 
+ }
+ 
+/*formatacao do menu*/
+
+nav#menu {
+	display: block;
+}
+nav#menu h1{
+	display: none;
+	
+}
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 630px;
+	font-size: 15px;
+}
+nav#menu li {
+	display: inline-block;
+	background-color: rgba(40, 40, 40, 0.2);
+	padding: 10px;
+	margin: 0px;
+	transition: background-color 1s;
+}
+nav#menu li:hover {
+	background-color: #707070;
+	color: white;
+	text-decoration: underline;	
+}
+nav#menu a {
+    color: black;	
+}
+ /* formatacao dos titulos*/
+hgroup h1.glass{
+	font-family: 'fontelogo', sans-serif;
+	font-size: 19pt;
+	color: #606060;
+	background-color: white;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+hgroup h2.autor{
+	color: rgba(20,20,20,.3);
+	margin-top: 0px;
+	padding: 0px;
+	background-color: white;
+	font-size: 10pt;
+	font-weight: bolder;
+}
+hgroup h2.google{
+	font-family: calibri, sans-serif;
+	font-weight: normal;
+	background-color: white;
+	text-decoration: normal;
+}
+hgroup h3.autor{
+	color: rgba(20,20,20,.4);
+	margin-top: 6px;
+	padding: 4px;
+	background-color: white;
+	font-size: 11pt;
+}
+hgroup h3.data{
+	font-size: 9pt;
+	text-align: right;
+	margin-bottom: 0px;
+	font-weight: normal;
+	color: #606060;
+	text-decoration: italic;
+	padding-bottom: 0px;
+	
+}
+/*formatacao da interface*/
+section.corpo{
+    display: block;
+	width: 620px;
+	font-family: calibri; sans-serif;
+	font-size: 12pt;
+	float: left;
+	border-right: 1px solid #888888;
+	padding-right: 20px;
+}
+section h1,h2{
+	background-color: rgba(20,20,20,.2);
+	color: #606060;
+	font-family: arial, sans-serif;
+	font-size: 15pt;
+	padding: 3px;
+	padding-left: 5px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+table#tabelaspec {
+	border: 1px solid #606060;	
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table#tabelaspec td{
+	border: 1px solid #606060;
+	padding: 10px;
+	vertical-align: top;
+}
+table#tabelaspec caption{
+	color: #888888;
+	font-weight: bolder;
+	font-size: 14pt;
+}
+table#tabelaspec caption span{
+	display: block;
+	float: right;
+	text-align: right;
+	color: black;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+td.ce {
+	color: white;
+	background-color: #606060;
+	font-weight: bold;
+	text-align: right;
+}
+td.cd{
+	background-color: #cecece;
+	
+}
+
+aside.lateral{
+	display: block;
+	width:380px;
+	float: right;
+	padding-right: 5px;
+	padding-left: 0px;
+	background-color: #dddddd;
+	margin-top: 20px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+aside.lateral h1{
+	font-family: 'fontelogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+}
+aside.lateral h2{
+	background-color: #606060;
+	font-size: 15pt;
+	color: white;
+	padding: 6px;
+	margin-bottom: -2px;
+	
+}
+footer.rodape{
+	border-top: 1px solid #888888;
+	clear: both;
+}
+footer.rodape p{
+	text-align: center;
+	padding-top: 2px;
+}

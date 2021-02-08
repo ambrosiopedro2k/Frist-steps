@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+<link rel="stylesheet" href="_css/form.css"/>
+<title> Tudo sobre o Google Glass        
+</title>
+</head>
+<script language="javascript" src="_javascript/funcoes.js" ></script>
+<script>
+	function calc_total() {
+		var qtd = parseInt(document.getElementById('cqtd').value);
+	tot = qtd * 1500;
+	document.getElementById('ctot').value = tot;
+	}
+
+</script>
+<body>
+<div id="interface">
+
+<header id="cabecalho">
+
+<hgroup>
+<h1>Google Glass</h1>
+<h2 class="google">A revolução do Google está chegando</h2> 
+</hgroup>
+
+  <img id="icone" src="_imagens/contato.png" id="icone">
+
+<nav id="menu">
+
+  <h1>Menu Principal</h1>
+  
+  <ul>
+  <a href="index.html"><li onmouseover="mudafoto('_imagens/home.png')" onmouseout="mudafoto('_imagens/contato.png')">Home</li></a>
+  <a href="specs.html"><li onmouseover="mudafoto('_imagens/especificacoes.png')" onmouseout="mudafoto('_imagens/contato.png')">Especificações</li></a>
+  <a href="fotos.html"><li onmouseover="mudafoto('_imagens/fotos.png')" onmouseout="mudafoto('_imagens/contato.png')">Fotos</li></a>
+  <a href="multimidia.html"><li onmouseover="mudafoto('_imagens/multimidia.png')" onmouseout="mudafoto('_imagens/contato.png')">Multimídia</li></a>
+  <a href="fale-conosco.html"><li onmouseover="mudafoto('_imagens/contato.png')" onmouseout="mudafoto('_imagens/contato.png')">Fale conosco</li></a>
+  </ul>
+  
+</nav>
+</header>
+
+<header>
+<hgroup>
+<h3 class="autor">Fale Conosco > Contato</h3>
+<h1 class="glass">Formulário de Contato</h1>
+<h2 class="autor">por Ambrosio Gaspar</h2>
+<h3 class="data">Atualizado em 01/Maio/2013</h3>
+</hgroup>
+</header>
+
+<form method="post" id="fcontacto" action="mailto:ambroswegger@hotmail.com" oninput="calc_total();">
+
+<fieldset id="usuario">
+<legend>Identificação do Usuário</legend>
+    
+	<p> <label for="cnome"/>Nome: <input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="nome completo"/></p>
+    
+	<p><label for="csenha"/> Senha: <input type="password" name="tsenha" id="csenha" size="10" maxlength="12" placeholder="palavra-passe"/> 8-12 digitos</p>
+    
+	<p><label for="cmail"/>E-mail: <input type="email" name="tmail" id="cmail" size="18" maxlength="35"/> ex.: emaildealguem@pessoa.com</p>
+    <fieldset id="sexo"><legend>Sexo: </legend>
+        <input type="radio" name="tsexo" id="cmasc" checked /> <label for="cmasc"/>Masculino <br/> <input type="radio" name="tsexo" id="cfem"/><label for="cfem"/> Feminino
+	</fieldset>
+	<p>Data de Nascimento: <input type="date" name="tdate" id="cdate"> </p>
+	<keygen name="security">
+</fieldset>
+
+<fieldset id="endereco">
+<legend>Endereço do Usuário</legend>
+    
+	<p> <label for="cendereco"/>Endereço: <input type="text" name="tendereco" id="cendereco" size="20" maxlength="35" placeholder="Num. da casa, Rua, Distrito"/> </p> 
+	
+	<p> <label for="cdistrito"/> Municipio: <input type="text" name="tdistrito" id="cdistrito" size="15" maxlength="25" placeholder="Municipios" list="Dcidades" /> </p>
+    <datalist id="Dcidades">
+		<option value="Belas"></option>
+		<option value="Cazenga"></option>
+		<option value="Cacuaco"></option>
+		<option value="M.Luanda"></option>
+		<option value="Kilamba kiaxi"></option>
+		<option value="Viana"></option>
+	</datalist>
+		
+	<p> <label for="cprov"/>Provincia: <select name="tprov" id="cprov"/>
+	<optgroup label="Norte"><option>Cabinda</option>
+	<option selected>Luanda</option>
+	<option>Malange</option></optgroup>
+	<optgroup label="Centro-Sul">
+	<option>Huambo</option>
+	<option>Benguela</option>
+	<option>Huila</option></optgroup>
+	</select></p>
+</fieldset>
+
+<fieldset id="mensagem">
+<legend>Mensagem do Usuário</legend>
+    
+	<p>Grau de Urgência:  Min<input type="range"name="turg" id="curg" min="0" max="9" step="3">Max</p>
+	
+    <p><label for="cmsg"/>Mensagem: <textarea type="text" name="tmsg" id="cmsg" rows="5" size="300" placeholder="Deixe Aqui a sua mensagem" ></textarea></p>
+</fieldset>
+
+<fieldset id="pedido">
+<legend>Quero um Google Glass</legend>
+    <p><label for="cped"/><input type="checkbox" name="tped" id="cped" checked />Gostaria de adquirir um Google Glass quando disponível
+	</p>
+	
+    <p><label for="ccolor"/>Cor: <input type="color" name="tcor" id="ccor"/>
+	</p>
+    
+	<p><label for="cqtd">Quantidade: <input type="number" name="tqtd" id="cqtd" min="1" max="6" value="1"/>
+	</p>
+    
+	<p><label for="ctot">Preço Total: <input type="text" name="ttot" id="ctot" placeholder="total a pagar" readonly /> AoA
+	</p>
+</fieldset>
+
+ <input type="submit" value="Enviar" id="send"/>
+
+ 
+</form>
+
+<footer class="rodape">
+<p>Copyright &copy 2013 - by Ambrosio Gaspar <br/>
+Facebook | Twitter</p>
+</footer>
+
+</div>
+</body>
+</html>
